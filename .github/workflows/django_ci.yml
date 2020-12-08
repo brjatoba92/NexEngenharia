@@ -36,9 +36,10 @@ jobs:
         pipenv run flake8 .
     - name: Test with pytest
       run: |
-        #pipenv run pytest sitenex --cov=sitenex
+        pipenv run pytest sitenex --cov=sitenex
     - name: Posting Coverage
       env:
-        CODECOV_TOKEN: "cd7f1827-5504-4f3a-a7e0-639503a56937"
+        CODECOV_TOKEN: "872fcc49-d4f8-4199-8c70-900b2ce77366"
+        #CODECOV_TOKEN: "cd7f1827-5504-4f3a-a7e0-639503a56937"
       run: |
         pipenv run codecov
