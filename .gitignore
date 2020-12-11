@@ -51,6 +51,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+# Media and static files
+staticfiles/
+mediafiles/
+
 # Translations
 *.mo
 *.pot
